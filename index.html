@@ -18,19 +18,19 @@
       <!-- File upload -->
       <div class="drop-zone" id="drop-zone">
         <input type="file" id="file-input" accept=".csv" />
-        <p>Drop your CSV here or <label for="file-input">browse</label></p>
+        <p>Drop your CSV here or <label for="file-input">browse files</label></p>
       </div>
       <!-- File upload -->
 
       <!-- Action buttons -->
-      <div class="actions" id="actions">
+      <div class="actions hidden" id="actions">
         <button id="btn-process">Process redirects</button>
         <button id="btn-export">Export CSV</button>
       </div>
       <!-- Action buttons -->
 
       <!-- Results table -->
-      <div class="table-wrap" id="table-wrap">
+      <div class="table-wrap hidden" id="table-wrap">
         <table id="redirect-table">
           <thead>
             <tr>
@@ -45,6 +45,7 @@
       </div>
       <!-- Results table -->
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
