@@ -1,12 +1,16 @@
 .hero {
   text-align: center;
+  padding: 30px;
 }
 
 .hero-title {
   font-size: 5rem;
   color: rgb(0, 119, 255);
+  width: auto;
 }
 
 .hero-content {
   font-size: 2rem;
+  color: rgb(51, 56, 63);
+  width: auto;
 }

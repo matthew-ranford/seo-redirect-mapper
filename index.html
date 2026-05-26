@@ -10,10 +10,41 @@
     <section class="hero">
       <h1 class="hero-title">SEO Redirect Mapper</h1>
       <p class="hero-content">
-        Welcome to the start of the SEO redirect mapper, I will build this with
-        vanilla JS first to get back into the action of coding.
+        Upload a CSV with your old and new slugs — we'll handle the rest.
       </p>
     </section>
+
+    <main class="main-container">
+      <!-- File upload -->
+      <div class="drop-zone" id="drop-zone">
+        <input type="file" id="file-input" accept=".csv" />
+        <p>Drop your CSV here or <label for="file-input">browse</label></p>
+      </div>
+      <!-- File upload -->
+
+      <!-- Action buttons -->
+      <div class="actions" id="actions">
+        <button id="btn-process">Process redirects</button>
+        <button id="btn-export">Export CSV</button>
+      </div>
+      <!-- Action buttons -->
+
+      <!-- Results table -->
+      <div class="table-wrap" id="table-wrap">
+        <table id="redirect-table">
+          <thead>
+            <tr>
+              <th>Old Slug</th>
+              <th>Destination</th>
+              <th>Type</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+      <!-- Results table -->
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
